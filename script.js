@@ -17,3 +17,7 @@ function ten_plus_ten() {
 function change_entire_html() {
     document.write(1 + 1);
 }
+
+function window_alert() {
+    window.alert("This is a Window Alert!")
+}
