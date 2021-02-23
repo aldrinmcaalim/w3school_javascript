@@ -25,3 +25,11 @@ function window_alert() {
 function console_log() {
     console.log("I am a console.log()!")
 }
+
+x = 10;
+y = 2;
+z = x + y;
+
+function variables() {
+    document.getElementById("variables").innerHTML = `Z is equal to: ${z}`
+}
