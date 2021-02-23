@@ -21,3 +21,7 @@ function change_entire_html() {
 function window_alert() {
     window.alert("This is a Window Alert!")
 }
+
+function console_log() {
+    console.log("I am a console.log()!")
+}
