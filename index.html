@@ -10,12 +10,15 @@
 </head>
 <body>
     <button onclick='document.getElementById("animal_noise").style.fontSize="35px"'>Increase font size</button>
+    <button onclick="remove_item()">Remove below paragraph</button>
+    <button onclick="return_item()">Return paragraph</button>
 
     <p id="animal_noise">Choose a button to hear an animal noise:</p>
     <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Oink oink!"'>Pig</button>
     <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Mooooo"'>Cow</button>
     <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Cluck cluck cluck"'>Chicken</button>
     <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Choose a button to hear an animal noise:"'>Reset Prompt</button>
+    <button onclick="myFunction()">Click Function Button</button>
 
     <p id="change_style">Mountain or Museum?</p>
     <button onclick='document.getElementById("change_style").style.fontSize="35px"'>Change font size</button>
