@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <button onclick='document.getElementById("animal_noise").style.fontSize="35px"'>Increase font size</button>
+    
+    <p id="animal_noise">Choose a button to hear an animal noise:</p>
+    <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Oink oink!"'>Pig</button>
+    <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Mooooo"'>Cow</button>
+    <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Cluck cluck cluck"'>Chicken</button>
+    <button type='button' onclick='document.getElementById("animal_noise").innerHTML = "Choose a button to hear an animal noise:"'>Reset Prompt</button>
+
+    <p id="change_style">Mountain or Museum?</p>
+    <button onclick='document.getElementById("change_style").style.fontSize="35px"'>Change font size</button>
+
+    <button onclick='document.getElementById("my_image").src="images/museum.jpg"'>Museum</button>
+    <img src="images/mountain.jpg" alt="Mountain/Museum" id="my_image" width="400px">
+    <button onclick='document.getElementById("my_image").src="images/mountain.jpg"'>Mountain</button>
+</body>
+</html>
