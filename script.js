@@ -33,3 +33,10 @@ z = x + y;
 function variables() {
     document.getElementById("variables").innerHTML = `Z is equal to: ${z}`
 }
+
+function priceTotal() {
+    let price1 = 10;
+    let price2 = 20;
+
+    document.getElementById("price").innerHTML = `$${price1 + price2}.00`;
+}
