@@ -40,3 +40,10 @@ function priceTotal() {
 
     document.getElementById("price").innerHTML = `$${price1 + price2}.00`;
 }
+// Block scoping with price1 within the function, which is a form of functional scoping
+// Global scoping with price1 that is outside the function, and is accessible to everything in the global scope
+// In short, block scoping is only available for use within a functions block scope, while global scope is accessible outside a function and inside a function
+
+let price1 = 100;
+
+document.getElementById("thePrice").innerHTML = `${price1}`;
