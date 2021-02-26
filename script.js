@@ -69,3 +69,13 @@ let person = {
 };
 
 document.getElementById("try1").innerHTML = `${person.fullName()} is from ${person.location()}.`
+let car = {
+    year: 2020,
+    brand: 'Toyota',
+    model: 'Prius',
+    fullTitle: function () {
+        return `${this.year} ${this.brand} ${this.model}`;
+    },
+};
+
+document.getElementById("try2").innerHTML = `Would you like to see our ${car.fullTitle()}?`
