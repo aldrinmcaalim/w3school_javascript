@@ -47,3 +47,9 @@ function priceTotal() {
 let price1 = 100;
 
 document.getElementById("thePrice").innerHTML = `${price1}`;
+
+function heightInInches(feet) {
+    return feet * 12;
+};
+
+document.getElementById("try").innerHTML = `You are ${heightInInches(5)} inches tall.`;
