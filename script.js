@@ -53,3 +53,19 @@ function heightInInches(feet) {
 };
 
 document.getElementById("try").innerHTML = `You are ${heightInInches(5)} inches tall.`;
+
+let person = {
+    firstName: "Michael",
+    lastName: "Scott",
+    city: "Scranton",
+    state: "Pennsylvania",
+    age: 44,
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`;
+    },
+    location: function () {
+        return `${this.city}, ${this.state}`;
+    },
+};
+
+document.getElementById("try1").innerHTML = `${person.fullName()} is from ${person.location()}.`
