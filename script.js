@@ -79,3 +79,19 @@ let car = {
 };
 
 document.getElementById("try2").innerHTML = `Would you like to see our ${car.fullTitle()}?`
+
+function ticketPrice() {
+    let age = Number(prompt(`What is your age?`));
+
+    if (age < 3 || age >= 65) {
+        cost = 0;
+    } else if (age >= 3 && age < 13) {
+        cost = 5;
+    } else if (age >= 13 && age < 65) {
+        cost = 10;
+    }
+
+    document.getElementById("cost").innerHTML = `You are ${age} years old. Your ticket will cost $${cost}.00.`
+}
+
+
