@@ -94,4 +94,34 @@ function ticketPrice() {
     document.getElementById("cost").innerHTML = `You are ${age} years old. Your ticket will cost $${cost}.00.`
 }
 
+function login() {
+    // Ask user for login information
+    let login = prompt("Who are you?");
+    let response;
+
+    if (login == "Admin" || login == "admin") {
+        // If user admin, prompt for password
+        let password = prompt("Password?");
+
+        if (password == "TheMaster") {
+            response = `Welcome!`;
+        } else if (password == "" || password == null) {
+            response = `Canceled Password Input`;
+        } else {
+            response = `Incorrect Password`;
+        }
+
+    // If no user prompted, cancel login
+    } else if (login == '' || login == null) {
+        response = `Canceled Login`;
+
+    // If they are not valid user
+    } else {
+        response = `I don't know you.`;
+    }
+
+    // Display the response on the HTML document
+    document.getElementById("login").innerHTML = `${response}`;
+}
+
 
