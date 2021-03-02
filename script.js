@@ -124,4 +124,15 @@ function login() {
     document.getElementById("login").innerHTML = `${response}`;
 }
 
+function makeTriangle() {
+    let i = 0;
+    let shape = "#";
+
+    while (i < 7) {
+        console.log(shape);
+        shape += "#";
+        i++;
+    }
+}
+
 
